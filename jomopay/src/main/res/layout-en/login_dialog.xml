@@ -9,8 +9,8 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        app:layout_heightPercent="85%"
-        app:layout_widthPercent="85%">
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%">
 
 
         <EditText
@@ -60,19 +60,12 @@
 
         <Button
             android:id="@+id/loginBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editText2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="28dp"
             android:text="Login" />
-
-        <RelativeLayout
-            android:id="@+id/progressLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#c0000000"
-            android:visibility="invisible">
 
             <com.projectx.jomopay.components.CircularProgress
                 android:id="@+id/progressBar"
@@ -80,10 +73,11 @@
                 android:layout_height="30dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:visibility="visible"
+                android:visibility="invisible"
+                android:layout_below="@+id/editText2"
+                android:layout_marginTop="37dp"
                 app:circular_progress_color="@color/app_theme_color"
                 app:circular_progress_size="Normal" />
-        </RelativeLayout>
 
     </android.support.percent.PercentRelativeLayout>
 </android.support.percent.PercentRelativeLayout>
