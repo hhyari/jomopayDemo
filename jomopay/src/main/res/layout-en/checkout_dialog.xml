@@ -81,10 +81,10 @@
             android:background="#c0000000"
             android:visibility="invisible">
 
-            <com.apprator.kanafandisaudi.Items.CircularProgress
+            <com.projectx.jomopay.components.CircularProgress
                 android:id="@+id/progressBar"
-                android:layout_width="@dimen/cart_sbt_button_height"
-                android:layout_height="@dimen/cart_sbt_button_height"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:visibility="visible"
