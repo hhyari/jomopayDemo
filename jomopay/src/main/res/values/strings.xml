@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">jomopay</string>
+
+    <color name="app_theme_color">#d25023</color>
 </resources>

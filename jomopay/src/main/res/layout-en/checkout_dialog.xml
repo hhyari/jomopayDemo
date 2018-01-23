@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="85%"
+        app:layout_widthPercent="85%">
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="10.40"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/payLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:text="You are paying"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/checkOutBtn"
+            android:layout_width="180dp"
+            android:background="@color/defColor"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merchantName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="Submit Payment" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/jomopay" />
+
+        <TextView
+            android:id="@+id/merchantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="For Talabat"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Hello Ahmad"
+            android:textSize="30sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#c0000000"
+            android:visibility="invisible">
+
+            <com.apprator.kanafandisaudi.Items.CircularProgress
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/cart_sbt_button_height"
+                android:layout_height="@dimen/cart_sbt_button_height"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                app:circular_progress_color="@color/app_theme_color"
+                app:circular_progress_size="Normal" />
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

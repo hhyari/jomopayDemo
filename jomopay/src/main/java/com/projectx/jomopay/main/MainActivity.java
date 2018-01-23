@@ -10,7 +10,8 @@ public class MainActivity extends Activity {
 
     CheckOut i = new CheckOut(this);
     {
-        i.startSession("+9629", 10.4, new paymentListener() {
+        i.startSession("+9629","Talabat", 10.4,
+                new paymentListener() {
             @Override
             public void onPaymentSucceed() {
 
