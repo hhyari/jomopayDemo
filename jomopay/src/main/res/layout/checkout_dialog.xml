@@ -12,72 +12,78 @@
         app:layout_heightPercent="100%"
         app:layout_widthPercent="100%">
 
-
-        <EditText
-            android:id="@+id/editText"
+        <TextView
+            android:id="@+id/amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_below="@+id/payLabel"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp"
-            android:ems="10"
-            android:hint="Phone Number"
-            android:inputType="phone" />
-
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editText"
-            android:layout_alignStart="@+id/editText"
-            android:layout_below="@+id/editText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:hint="Pin Code"
-            android:inputType="numberPassword" />
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="47dp"
-            android:src="@drawable/jomopay" />
+            android:layout_marginTop="5dp"
+            android:text="10.40"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="70dp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/payLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="64dp"
-            android:text="Login to your wallet"
-            android:textSize="16dp" />
+            android:layout_marginTop="145dp"
+            android:text="@string/you_are_paying"
+            android:textSize="18dp" />
 
         <Button
-            android:id="@+id/loginBtn"
-            android:layout_width="120dp"
+            android:id="@+id/checkOutBtn"
+            android:layout_width="180dp"
+            android:background="@color/defColor"
+            android:textColor="#fff"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText2"
+            android:layout_below="@+id/merchantName"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="28dp"
-            android:text="Login" />
+            android:layout_marginTop="48dp"
+            android:text="@string/submit_payment_btn" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/jomopay" />
+
+        <TextView
+            android:id="@+id/merchantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/for_merchant_label"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/welcomeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="@string/welcome_label"
+            android:textSize="35sp" />
+
+
 
             <com.projectx.jomopay.components.CircularProgress
                 android:id="@+id/progressBar"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:visibility="invisible"
-                android:layout_below="@+id/editText2"
-                android:layout_marginTop="37dp"
+                android:layout_below="@+id/merchantName"
+                android:layout_marginTop="61dp"
                 app:circular_progress_color="@color/app_theme_color"
                 app:circular_progress_size="Normal" />
-
     </android.support.percent.PercentRelativeLayout>
 </android.support.percent.PercentRelativeLayout>

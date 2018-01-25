@@ -12,78 +12,71 @@
         app:layout_heightPercent="100%"
         app:layout_widthPercent="100%">
 
-        <TextView
-            android:id="@+id/amount"
+
+        <EditText
+            android:id="@+id/phoneET"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/payLabel"
+            android:layout_below="@+id/loginLabel"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:text="10.40"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="50dp" />
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/phone_number_hint"
+            android:inputType="phone" />
 
-        <TextView
-            android:id="@+id/payLabel"
+
+        <EditText
+            android:id="@+id/CodeET"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView"
+            android:layout_below="@+id/phoneET"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="95dp"
-            android:text="You are paying"
-            android:textSize="18dp" />
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/pin_code_hint"
+            android:inputType="numberPassword" />
 
-        <Button
-            android:id="@+id/checkOutBtn"
-            android:layout_width="180dp"
-            android:background="@color/defColor"
-            android:textColor="#fff"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/merchantName"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="38dp"
-            android:text="Submit Payment" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
+            android:layout_width="220dp"
+            android:layout_height="130dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="47dp"
             android:src="@drawable/jomopay" />
 
         <TextView
-            android:id="@+id/merchantName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/amount"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:text="For Talabat"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView"
+            android:id="@+id/loginLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:text="Hello Ahmad"
-            android:textSize="30sp" />
+            android:layout_marginTop="84dp"
+            android:text="@string/login_to_your_wallet"
+            android:textSize="16dp" />
 
-
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/CodeET"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="@string/login_btn" />
 
             <com.projectx.jomopay.components.CircularProgress
                 android:id="@+id/progressBar"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:visibility="invisible"
-                android:layout_below="@+id/merchantName"
-                android:layout_marginTop="47dp"
+                android:layout_below="@+id/CodeET"
+                android:layout_marginTop="37dp"
                 app:circular_progress_color="@color/app_theme_color"
                 app:circular_progress_size="Normal" />
+
     </android.support.percent.PercentRelativeLayout>
 </android.support.percent.PercentRelativeLayout>

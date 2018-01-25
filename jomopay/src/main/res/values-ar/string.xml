@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">jomopay</string>
+    <string name="phone_number_hint">رقم الهاتف</string>
+    <string name="pin_code_hint">الرمز السري</string>
+    <string name="login_btn">تسجيل الدخول</string>
+    <string name="login_to_your_wallet">سجل الدخول لمحفظتك</string>
+    <string name="welcome_label">مرحبا احمد</string>
+    <string name="you_are_paying">انت تدفع</string>
+    <string name="for_merchant_label">لصالح</string>
+    <string name="submit_payment_btn">ادفع</string>
+
+    <color name="app_theme_color">#d25023</color>
+
+</resources>

@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">jomopay</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="pin_code_hint">Pin Code</string>
+    <string name="login_btn">Login</string>
+    <string name="login_to_your_wallet">Login to your wallet</string>
+    <string name="welcome_label">Hello Ahmad</string>
+    <string name="you_are_paying">You are paying</string>
+    <string name="for_merchant_label">For Talabat</string>
+    <string name="submit_payment_btn">Submit Payment</string>
 
     <color name="app_theme_color">#d25023</color>
+
+
 </resources>
